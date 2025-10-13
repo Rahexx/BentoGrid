@@ -1,4 +1,6 @@
+@use "../utils/variables" as *;
+
 .bento {
-    width: 343px;
-    margin: 0 auto;
+    width: 21.438rem;
+    margin: $spacing-8 auto;
 }

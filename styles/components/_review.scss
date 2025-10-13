@@ -1,0 +1,34 @@
+@use "../utils/variables" as *;
+
+.review {
+    padding: $spacing-10 $spacing-8;
+    background: $purple-500;
+    border-radius: 0.625rem;
+    text-align: center;
+
+    &__title {
+        color: $white;
+        font-size: $font-size-11-2;
+        font-weight: $font-medium;
+        line-height: 2.625rem;
+        letter-spacing: $letter-spacing-xl;
+
+        &--highlight {
+            color: $yellow-500;
+        }
+    }
+
+    &__stars {
+        display: inline-block;
+        margin: $spacing-6 auto $spacing-2;
+        height: 2rem;
+        width: 12rem;
+    }
+
+    &__info {
+        color: $white;
+        font-size: $font-size-4-2;
+        font-weight: $font-regular;
+        line-height: 1.25rem
+    }
+}
