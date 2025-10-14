@@ -1,0 +1,21 @@
+@use "../utils/variables" as *;
+
+.manage {
+    padding: $spacing-4;
+    background: $white;
+    border-radius: 0.625rem;
+
+    &__accounts {
+        display: inline-block;
+        height: 66px;
+        width: 316px;
+    }
+
+    &__title {
+        color: $black;
+        line-height: 1.5rem;
+        letter-spacing: $letter-spacing-xxl;
+        font-size: $font-size-6-2;
+        font-weight: $font-medium;
+    }
+}
