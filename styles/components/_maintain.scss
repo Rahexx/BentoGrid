@@ -1,0 +1,27 @@
+@use "../utils/variables" as *;
+
+.maintain {
+    position: relative;
+    padding: $spacing-4;
+    height: 13.516rem;
+    background: $yellow-500;
+    border-radius: 0.625rem;
+    overflow: hidden;
+
+    &__title {
+        color: $black;
+        line-height: 1.5rem;
+        letter-spacing: $letter-spacing-xxl;
+        font-size: $font-size-6-2;
+        font-weight: $font-medium;
+    }
+
+    &__schedule {
+        position: absolute;
+        bottom: calc(-1 * 1.313rem);
+        left: $spacing-4;
+        display: inline-block;
+        height: 9.813rem;
+        width: 13rem;
+    }
+}
