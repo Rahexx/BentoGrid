@@ -11,7 +11,7 @@
     &__title {
         color: $black;
         line-height: 1.5rem;
-        letter-spacing: $letter-spacing-xxl;
+        letter-spacing: calc($font-size-6-2 * ($letter-spacing-xxl / $font-size-10));
         font-size: $font-size-6-2;
         font-weight: $font-medium;
     }
