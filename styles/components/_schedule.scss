@@ -6,12 +6,7 @@
     padding: $spacing-8 $spacing-4;
 
     &__title {
-        @include m.letter-spacing($font-size-6-2, $letter-spacing-xxl);
-        line-height: 1.5rem;
-        font-size: $font-size-6-2;
-        font-weight: $font-medium;
-        color: $black;
-        text-align: center;
+        @include m.text-style($font-size-6-2, $font-medium,center, 1.5rem, $black, $letter-spacing-xxl);
     }
 
     &__img {
@@ -20,11 +15,8 @@
     }
 
     &__info {
+        @include m.text-style($font-size-4-2, $font-regular,center, 1.25rem, $black);
         width: 17.438rem;
         margin: 0 auto;
-        line-height: 1.25rem;
-        color: $black;
-        font-size: $font-size-4-2;
-        text-align: center;
     }
 }

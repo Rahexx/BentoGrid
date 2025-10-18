@@ -2,8 +2,8 @@
 @use "../utils/mixins" as m;
 
 .manage {
-    padding: $spacing-4;
     @include m.bg-with-radius($white);
+    padding: $spacing-4;
 
     &__accounts {
         display: inline-block;
@@ -12,10 +12,6 @@
     }
 
     &__title {
-        @include m.letter-spacing($font-size-6-2, $letter-spacing-xxl);
-        color: $black;
-        line-height: 1.5rem;
-        font-size: $font-size-6-2;
-        font-weight: $font-medium;
+        @include m.text-style($font-size-6-2, $font-medium, start, 1.5rem, $black, $letter-spacing-xxl);
     }
 }

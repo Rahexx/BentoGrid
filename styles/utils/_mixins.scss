@@ -1,8 +1,27 @@
+@use "./variables" as v;
+
 @mixin bg-with-radius($bg-color) {
     background: $bg-color;
     border-radius: 0.625rem;
 }
 
 @mixin letter-spacing($font-size, $letter-var) {
-letter-spacing: calc(-1 * #{$font-size} * (#{$letter-var} / #{$font-size}));
+    letter-spacing: calc(-1 * #{$font-size} * (#{$letter-var} / #{$font-size}));
+}
+
+@mixin text-style($font-size,$font-weight: v.$font-regular,$text-align: start, $line-height: null, $color: null, $letter-spacing: null) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+
+  @if $color != null {
+    color: $color;
+  }
+
+  @if $letter-spacing != null {
+    @include letter-spacing($font-size, $letter-spacing);
+  }
 }

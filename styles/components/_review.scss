@@ -2,16 +2,12 @@
 @use "../utils/mixins" as m;
 
 .review {
+    @include m.bg-with-radius($purple-500);
     padding: $spacing-10 $spacing-8;
     text-align: center;
-    @include m.bg-with-radius($purple-500);
 
     &__title {
-        @include m.letter-spacing($font-size-11-2, $letter-spacing-xl);
-        color: $white;
-        font-size: $font-size-11-2;
-        font-weight: $font-medium;
-        line-height: 2.625rem;
+        @include m.text-style($font-size-11-2, $font-medium, start, 2.625rem, $white, $letter-spacing-xl);
 
         &--highlight {
             color: $yellow-500;
@@ -26,9 +22,6 @@
     }
 
     &__info {
-        color: $white;
-        font-size: $font-size-4-2;
-        font-weight: $font-regular;
-        line-height: 1.25rem
+        @include m.text-style($font-size-4-2, $font-regular, start, 1.25rem, $white);
     }
 }

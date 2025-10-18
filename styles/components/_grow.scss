@@ -15,13 +15,8 @@
     }
 
     &__title {
-        @include m.letter-spacing($font-size-8, $letter-spacing-xxl);
+        @include m.text-style($font-size-8, $font-medium, center, 1.75rem, $white, $letter-spacing-xxl);
         margin-top: $spacing-10;
         width: 16.063rem;
-        font-size: $font-size-8;
-        font-weight: $font-medium;
-        color: $white;
-        line-height: 1.75rem;
-        text-align: center;
     }
 }
