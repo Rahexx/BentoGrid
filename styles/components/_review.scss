@@ -15,10 +15,8 @@
     }
 
     &__stars {
-        display: inline-block;
+        @include m.img-inline(2rem, 12rem);
         margin: $spacing-6 auto $spacing-2;
-        height: 2rem;
-        width: 12rem;
     }
 
     &__info {

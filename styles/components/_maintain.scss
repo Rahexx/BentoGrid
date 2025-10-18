@@ -13,11 +13,9 @@
     }
 
     &__schedule {
+        @include m.img-inline(9.813rem, 13rem);
         position: absolute;
         bottom: calc(-1 * 1.313rem);
         left: $spacing-4;
-        display: inline-block;
-        height: 9.813rem;
-        width: 13rem;
     }
 }

@@ -6,9 +6,7 @@
     padding: $spacing-4;
 
     &__accounts {
-        display: inline-block;
-        height: 66px;
-        width: 316px;
+        @include m.img-inline(4.125rem, 19.75rem);
     }
 
     &__title {
