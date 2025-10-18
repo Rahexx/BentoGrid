@@ -1,0 +1,27 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.grow {
+    padding: $spacing-6 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.bg-with-radius($purple-500);
+
+    &__followers {
+        display: inline-block;
+        height: 12.514rem;
+        width: 14.23rem;
+    }
+
+    &__title {
+        margin-top: $spacing-10;
+        width: 16.063rem;
+        font-size: $font-size-8;
+        font-weight: $font-medium;
+        color: $white;
+        letter-spacing: calc($font-size-8 * ($letter-spacing-xxl / $font-size-8));
+        line-height: 1.75rem;
+        text-align: center;
+    }
+}
