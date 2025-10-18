@@ -2,3 +2,7 @@
     background: $bg-color;
     border-radius: 0.625rem;
 }
+
+@mixin letter-spacing($font-size, $letter-var) {
+letter-spacing: calc(-1 * #{$font-size} * (#{$letter-var} / #{$font-size}));
+}
