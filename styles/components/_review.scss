@@ -7,7 +7,7 @@
     text-align: center;
 
     &__title {
-        @include m.text-style($font-size-11-2, $font-medium, start, 2.625rem, $white, $letter-spacing-xl);
+        @include m.text-style($font-size-11, $font-medium, start, 2.625rem, $white, $letter-spacing-xl);
 
         &--highlight {
             color: $yellow-500;

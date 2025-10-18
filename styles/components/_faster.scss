@@ -1,0 +1,24 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.faster {
+    @include m.bg-with-radius($white);
+    padding: $spacing-6;
+
+    &__title {
+        @include m.text-style($font-size-4-2, $font-regular, start, 1.25rem, $black);
+        margin-bottom: $spacing-6;
+
+        &--highlight {
+            @include m.text-style($font-size-11-2, $font-medium, start, 2.625rem, $black, $letter-spacing-xl);
+            display: block;
+            margin-bottom: $spacing-4;
+        }
+    }
+
+    &__ai {
+        display: inline-block;
+        height: 4.161rem;
+        width: 11.183rem;
+    }
+}
