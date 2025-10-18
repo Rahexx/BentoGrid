@@ -1,9 +1,9 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as m;
 
 .schedule {
     padding: $spacing-8 $spacing-4;
-    background: $purple-100;
-    border-radius: 0.625rem;
+    @include m.bg-with-radius($purple-100);
 
     &__title {
         line-height: 1.5rem;

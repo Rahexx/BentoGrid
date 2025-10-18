@@ -1,9 +1,9 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as m;
 
 .manage {
     padding: $spacing-4;
-    background: $white;
-    border-radius: 0.625rem;
+    @include m.bg-with-radius($white);
 
     &__accounts {
         display: inline-block;

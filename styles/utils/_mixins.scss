@@ -1,0 +1,4 @@
+@mixin bg-with-radius($bg-color) {
+    background: $bg-color;
+    border-radius: 0.625rem;
+}

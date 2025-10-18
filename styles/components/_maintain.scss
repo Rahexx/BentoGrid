@@ -1,12 +1,12 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as m;
 
 .maintain {
     position: relative;
     padding: $spacing-4;
     height: 13.516rem;
-    background: $yellow-500;
-    border-radius: 0.625rem;
     overflow: hidden;
+    @include m.bg-with-radius($yellow-500);
 
     &__title {
         color: $black;
