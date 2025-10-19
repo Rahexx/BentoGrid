@@ -1,0 +1,23 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.create {
+    @include m.bg-with-radius($yellow-100);
+    padding: $spacing-8;
+
+    &__title {
+        @include m.text-style($font-size-8, $font-medium, start, 1.75rem, $black, $letter-spacing-xxl);
+        margin-bottom: $spacing-6;
+
+        &--highlight {
+            color: $purple-500;
+        }
+
+    }
+
+    &__img {
+        display: inline-block;
+        height: 5.647rem;
+        width: 11.875rem;
+    }
+}
