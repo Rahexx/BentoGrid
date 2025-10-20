@@ -1,0 +1,18 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.content {
+    @include m.bg-with-radius($yellow-500);
+    padding: $spacing-6;
+
+    &__title {
+        @include m.text-style($font-size-8, $font-medium, start, 1.75rem, $black, $letter-spacing-xxl);
+        margin-bottom: $spacing-6;
+    }
+
+    &__img {
+        display: inline-block;
+        height: 13.906rem;
+        width: 13.747rem;
+    }
+}
