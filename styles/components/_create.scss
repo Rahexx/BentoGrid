@@ -2,8 +2,7 @@
 @use "../utils/mixins" as m;
 
 .create {
-    @include m.bg-with-radius($yellow-100);
-    padding: $spacing-8;
+    @include m.bg-with-radius($yellow-100, $spacing-8);
 
     &__title {
         @include m.text-style($font-size-8, $font-medium, start, 1.75rem, $black, $letter-spacing-xxl);
@@ -16,8 +15,6 @@
     }
 
     &__img {
-        display: inline-block;
-        height: 5.647rem;
-        width: 11.875rem;
+        @include m.img-inline(5.647rem, 11.875rem);
     }
 }

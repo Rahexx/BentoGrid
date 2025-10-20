@@ -2,8 +2,7 @@
 @use "../utils/mixins" as m;
 
 .manage {
-    @include m.bg-with-radius($white);
-    padding: $spacing-4;
+    @include m.bg-with-radius($white, $spacing-4);
 
     &__accounts {
         @include m.img-inline(4.125rem, 19.75rem);

@@ -2,9 +2,8 @@
 @use "../utils/mixins" as m;
 
 .maintain {
-    @include m.bg-with-radius($yellow-500);
+    @include m.bg-with-radius($yellow-500, $spacing-4);
     position: relative;
-    padding: $spacing-4;
     height: 13.516rem;
     overflow: hidden;
 

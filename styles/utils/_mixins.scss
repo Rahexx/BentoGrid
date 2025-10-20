@@ -1,8 +1,12 @@
 @use "./variables" as v;
 
-@mixin bg-with-radius($bg-color) {
+@mixin bg-with-radius($bg-color, $spacing: null) {
     background: $bg-color;
     border-radius: 0.625rem;
+
+    @if $spacing != null {
+        padding: $spacing;
+    }
 }
 
 @mixin letter-spacing($font-size, $letter-var) {

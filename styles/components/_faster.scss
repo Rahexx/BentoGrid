@@ -2,8 +2,7 @@
 @use "../utils/mixins" as m;
 
 .faster {
-    @include m.bg-with-radius($white);
-    padding: $spacing-6;
+    @include m.bg-with-radius($white, $spacing-6);
 
     &__title {
         @include m.text-style($font-size-4-2, $font-regular, start, 1.25rem, $black);

@@ -10,7 +10,7 @@
     }
 
     &__img {
-        @include m.img-inline();
+        @include m.img-inline(17.057rem, 19.254rem);
         margin: $spacing-6 0;
     }
 
