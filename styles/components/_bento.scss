@@ -4,3 +4,10 @@
     width: 21.438rem;
     margin: $spacing-8 auto;
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .bento {
+        width: 43rem;
+        margin: $spacing-13 auto;
+    }
+}

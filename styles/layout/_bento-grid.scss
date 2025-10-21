@@ -5,3 +5,49 @@
     grid-template-columns: 1fr;
     gap: $spacing-8;
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .bento {
+        grid-template-columns: repeat(2, 20.5rem);
+        gap: $spacing-8;
+        grid-template-areas:
+            "review review"
+            "manage maintain"
+            "schedule schedule"
+            "grow grow"
+            "faster faster"
+            "create content";
+
+        &--review {
+            grid-area: review;
+        }
+
+        &--manage {
+            grid-area: manage;
+        }
+
+        &--maintain {
+            grid-area: maintain;
+        }
+
+        &--schedule {
+            grid-area: schedule;
+        }
+
+        &--grow {
+            grid-area: grow;
+        }
+
+        &--faster {
+            grid-area: faster;
+        }
+
+        &--create {
+            grid-area: create;
+        }
+
+        &--content {
+            grid-area: content;
+        }
+    }
+}
