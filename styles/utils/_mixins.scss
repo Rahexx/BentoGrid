@@ -10,7 +10,7 @@
 }
 
 @mixin letter-spacing($font-size, $letter-var) {
-    letter-spacing: calc(#{$font-size} * (#{$letter-var} / #{$font-size}));
+    letter-spacing: calc(#{$font-size} * (#{$letter-var} / #{$font-size})* -1);
 }
 
 @mixin text-style($font-size,$font-weight: v.$font-regular,$text-align: start, $line-height: null, $color: null, $letter-spacing: null) {

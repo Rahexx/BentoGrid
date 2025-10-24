@@ -23,3 +23,16 @@
         @include m.text-style($font-size-4-2, $font-regular, start, 1.25rem, $white);
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .review {
+        padding: $spacing-18 $spacing-19;
+
+        &__title {
+            width: 33.5rem;
+            line-height: 3rem;
+            font-size: $font-size-13-2;
+            text-align: center;
+        }
+    }
+}
