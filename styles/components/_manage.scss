@@ -12,3 +12,22 @@
         @include m.text-style($font-size-6-2, $font-medium, start, 1.5rem, $black, $letter-spacing-xxl);
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .manage {
+        position: relative ;
+        padding: $spacing-6;
+        overflow-x: hidden;
+
+        &__accounts {
+            position: absolute;
+        }
+
+        &__title {
+            margin-top: 7.563rem;
+            width: 13rem;
+            line-height: 1.625rem;
+            font-size: $font-size-7;
+        }
+    }
+}
