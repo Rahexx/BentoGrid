@@ -18,3 +18,19 @@
         left: $spacing-4;
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .maintain {
+        padding: $spacing-6;
+        height: 15.438rem;
+
+        &__title {
+            font-size: $font-size-7;
+            line-height: 1.625rem;
+        }
+
+        &__schedule {
+            left: $spacing-6;
+        }
+    }
+}
