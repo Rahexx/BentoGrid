@@ -18,3 +18,19 @@
         width: 16.063rem;
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .grow {
+        height: 15.375rem;
+        padding: 0 $spacing-20;
+        flex-direction: row;
+        align-items: center;
+        gap: $spacing-10;
+
+        &__title {
+            font-size: $font-size-9;
+            line-height: 1.875rem;
+            margin-top: 0;
+        }
+    }
+}
