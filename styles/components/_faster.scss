@@ -19,3 +19,20 @@
         @include m.img-inline(4.161rem, 11.183rem);
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .faster {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__title {
+            margin-bottom: 0;
+
+            &--highlight {
+                font-size: $font-size-13-2;
+                line-height: 3rem;
+            }
+        }
+    }
+}
