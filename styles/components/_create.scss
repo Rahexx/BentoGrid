@@ -18,3 +18,16 @@
         @include m.img-inline(5.647rem, 11.875rem);
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .create {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            font-size: $font-size-9;
+            line-height: $line-height-xl;
+        }
+    }
+}
