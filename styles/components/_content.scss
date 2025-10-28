@@ -13,3 +13,12 @@
         @include m.img-inline(13.906rem, 13.747rem);
     }
 }
+
+@media (min-width: $breakpoint-tablet) {
+    .content {
+        &__title {
+            font-size: $font-size-9;
+            line-height: 1.875rem;
+        }
+    }
+}
