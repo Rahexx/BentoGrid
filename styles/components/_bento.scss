@@ -11,3 +11,10 @@
         margin: $spacing-13 auto;
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    .bento {
+        width: 70rem;
+        margin: $spacing-21 auto;
+    }
+}

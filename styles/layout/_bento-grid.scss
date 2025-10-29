@@ -51,3 +51,16 @@
         }
     }
 }
+
+@media(min-width: $breakpoint-desktop) {
+    .bento {
+        grid-template-columns: repeat(4, 16rem);
+        grid-template-rows: 324px 91px 156px 246px;
+        gap: $spacing-8;
+        grid-template-areas:
+            "create review review schedule"
+            "create manage maintain schedule"
+            "content manage maintain schedule"
+            "content faster grow grow";
+    }
+}
