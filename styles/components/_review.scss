@@ -36,3 +36,15 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    .review {
+        padding: $spacing-15-2 $spacing-8;
+
+        &__title {
+            width: 30rem;
+            line-height: 3.625rem;
+            font-size: $font-size-15-2;
+        }
+    }
+}
