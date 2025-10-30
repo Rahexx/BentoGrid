@@ -31,3 +31,9 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    .create__title {
+        font-size: $font-size-10;
+    }
+}

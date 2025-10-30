@@ -15,10 +15,18 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
-    .content {
-        &__title {
-            font-size: $font-size-9;
-            line-height: 1.875rem;
-        }
+    .content__title {
+        font-size: $font-size-9;
+        line-height: 1.875rem;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .content__title {
+        margin-bottom: $spacing-14;
+        width: 12.938rem;
+        font-size: $font-size-10;
+        line-height: 2.25rem;
+        letter-spacing: $letter-spacing-md;
     }
 }
