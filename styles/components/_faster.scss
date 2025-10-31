@@ -36,3 +36,15 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    .faster {
+        flex-direction: column;
+
+        &__title--highlight {
+            font-size: $font-size-15-2;
+            line-height: 3.625rem;
+            letter-spacing: $letter-spacing-lg;
+        }
+    }
+}
