@@ -34,3 +34,16 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    .maintain {
+        &__title {
+            font-size: $font-size-8;
+            line-height: 1.75rem;
+        }
+
+        &__schedule {
+            top: 9.5rem;
+        }
+    }
+}
