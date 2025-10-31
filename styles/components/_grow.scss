@@ -34,3 +34,17 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    .grow {
+        padding: 0 $spacing-6;
+        justify-content: space-between;
+        gap: 0;
+
+        &__title {
+            font-size: $font-size-10;
+            line-height: 2.25rem;
+            letter-spacing: $letter-spacing-md;
+        }
+    }
+}
