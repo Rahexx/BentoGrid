@@ -44,3 +44,32 @@
         }
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    .schedule {
+        position: relative;
+        justify-content: space-between;
+        padding: $spacing-12-5 $spacing-8;
+        overflow-x: hidden;
+
+        &__title {
+            font-size: $font-size-8;
+            line-height: 1.75rem;
+            letter-spacing: $letter-spacing-md;
+        }
+
+        &__img {
+            position: absolute;
+            top: 8.125rem;
+            left: $spacing-8;
+            height: 19.926rem;
+            width: 22.331rem;
+            max-width: none;
+        }
+
+        &__info {
+            width: 12rem;
+            text-align: start;
+        }
+    }
+}
