@@ -1,0 +1,75 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.schedule {
+    @include m.bg-with-radius($purple-100);
+    padding: $spacing-8 $spacing-4;
+
+    &__title {
+        @include m.text-style($font-size-6-2, $font-medium,center, 1.5rem, $black, $letter-spacing-xxl);
+    }
+
+    &__img {
+        @include m.img-inline(17.057rem, 19.254rem);
+        margin: $spacing-6 0;
+    }
+
+    &__info {
+        @include m.text-style($font-size-4-2, $font-regular,center, 1.25rem, $black);
+        width: 17.438rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .schedule {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $spacing-8 0;
+
+        &__title {
+            font-size: $font-size-7;
+            line-height: 1.625rem;
+        }
+
+        &__img {
+            height: 19.926rem;
+            width: 22.331rem;
+        }
+
+        &__info {
+            width: 22.438rem;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .schedule {
+        position: relative;
+        justify-content: space-between;
+        padding: $spacing-12-5 $spacing-8;
+        overflow-x: hidden;
+
+        &__title {
+            font-size: $font-size-8;
+            line-height: 1.75rem;
+            letter-spacing: $letter-spacing-md;
+        }
+
+        &__img {
+            position: absolute;
+            top: 8.125rem;
+            left: $spacing-8;
+            height: 19.926rem;
+            width: 22.331rem;
+            max-width: none;
+        }
+
+        &__info {
+            width: 12rem;
+            text-align: start;
+        }
+    }
+}

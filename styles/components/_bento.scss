@@ -1,0 +1,20 @@
+@use "../utils/variables" as *;
+
+.bento {
+    width: 21.438rem;
+    margin: $spacing-8 auto;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .bento {
+        width: 43rem;
+        margin: $spacing-13 auto;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .bento {
+        width: 70rem;
+        margin: $spacing-21 auto;
+    }
+}

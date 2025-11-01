@@ -1,0 +1,50 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.faster {
+    @include m.bg-with-radius($white, $spacing-6);
+
+    &__title {
+        @include m.text-style($font-size-4-2, $font-regular, start, 1.25rem, $black);
+        margin-bottom: $spacing-6;
+
+        &--highlight {
+            @include m.text-style($font-size-11-2, $font-medium, start, 2.625rem, $black, $letter-spacing-xl);
+            display: block;
+            margin-bottom: $spacing-4;
+        }
+    }
+
+    &__ai {
+        @include m.img-inline(4.161rem, 11.183rem);
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .faster {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__title {
+            margin-bottom: 0;
+
+            &--highlight {
+                font-size: $font-size-13-2;
+                line-height: 3rem;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .faster {
+        flex-direction: column;
+
+        &__title--highlight {
+            font-size: $font-size-15-2;
+            line-height: 3.625rem;
+            letter-spacing: $letter-spacing-lg;
+        }
+    }
+}

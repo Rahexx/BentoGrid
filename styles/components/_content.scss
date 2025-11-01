@@ -1,0 +1,32 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.content {
+    @include m.bg-with-radius($yellow-500, $spacing-6);
+
+    &__title {
+        @include m.text-style($font-size-8, $font-medium, start, 1.75rem, $black, $letter-spacing-xxl);
+        margin-bottom: $spacing-6;
+    }
+
+    &__img {
+        @include m.img-inline(13.906rem, 13.747rem);
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .content__title {
+        font-size: $font-size-9;
+        line-height: 1.875rem;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .content__title {
+        margin-bottom: $spacing-14;
+        width: 12.938rem;
+        font-size: $font-size-10;
+        line-height: 2.25rem;
+        letter-spacing: $letter-spacing-md;
+    }
+}

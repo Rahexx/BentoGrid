@@ -1,0 +1,6 @@
+@use "../utils/variables" as *;
+
+.container {
+    background: $gray-100;
+    font-family: $font-primary;
+}

@@ -1,0 +1,44 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as m;
+
+.manage {
+    @include m.bg-with-radius($white, $spacing-4);
+
+    &__accounts {
+        @include m.img-inline(4.125rem, 19.75rem);
+        max-width: none
+    }
+
+    &__title {
+        @include m.text-style($font-size-6-2, $font-medium, start, 1.5rem, $black, $letter-spacing-xxl);
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .manage {
+        position: relative;
+        padding: $spacing-6;
+        overflow-x: hidden;
+
+        &__accounts {
+            position: absolute;
+        }
+
+        &__title {
+            margin-top: 7.563rem;
+            width: 13rem;
+            line-height: 1.625rem;
+            font-size: $font-size-7;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .manage__title {
+        margin-top: 5.438rem;
+        width: 12.938rem;
+        line-height: 1.75rem;
+        letter-spacing: $letter-spacing-md;
+        font-size: $font-size-8;
+    }
+}
